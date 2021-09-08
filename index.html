@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styles/style.css">
+	<title>Advertising agency Landing Page</title>
+</head>
+<body>
+	<section class="showcase">
+		<header>
+			<h2 class="logo">advertising agency</h2>
+			<div class="toggle"></div>
+		</header>
+
+		<video src="video/2169880.mp4" muted loop autoplay></video>
+
+		<div class="overlay"></div>
+
+		<div class="text">
+			<h2>Smart ideas</h2>
+			<h3>for your brand are here</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<a href="#">Explore</a>
+		</div>
+
+		<ul class="social">
+			<li><a href="https://sv-se.facebook.com/" target="_blank"><img src="Images/facebook.png" alt=""></a></li>
+			<li><a href="https://www.instagram.com/" target="_blank"><img src="Images/instagram.png" alt=""></a></li>
+			<li><a href="https://twitter.com/" target="_blank"><img src="Images/twitter.png" alt=""></a></li>
+		</ul>
+	</section>
+
+	<div class="menu">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">News</li>
+			<li><a href="#">Solutions</a></li>
+			<li><a href="#">Blog</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+
+	<script>
+		const menutoggle = document.querySelector('.toggle')
+		const showcase = document.querySelector('.showcase')
+
+		menutoggle.addEventListener('click', () =>{
+			menutoggle.classList.toggle('active')
+			showcase.classList.toggle('active')
+		})
+	</script>
+
+</body>
+</html>
